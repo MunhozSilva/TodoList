@@ -13,7 +13,7 @@ class TodoAdapter(private val todos: MutableList<Todo>) : RecyclerView.Adapter<T
     class TodoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoViewHolder {
-        return TodoViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_todo, parent, attachToRoot: false))
+        return TodoViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_todo, parent, false))
     }
 
     fun addTodo(todo: Todo) {
